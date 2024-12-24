@@ -61,6 +61,7 @@ max_date = all_orders_df['order_delivered_customer_date'].max()
 
 with st.sidebar:
     st.image('ecommerce.png')
+    
 
     start_date, end_date = st.date_input(
         label='Rentang Waktu', min_value = min_date,
@@ -153,3 +154,5 @@ ax[2].tick_params(axis='y', labelsize=20)
 ax[2].tick_params(axis='x', labelsize=20, rotation=50)
  
 st.pyplot(fig)
+
+st.caption('Copyright (c) Ricardo Situmorang 2023')
